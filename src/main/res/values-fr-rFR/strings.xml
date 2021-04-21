@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application gourmande</string>
+    <string name="food_info_placeholder">Voici quelques nouvelles de</string>
+    <string name="news_placeholder">Nouvelles</string>
+    <string name="title_placeholder">Titre</string>
+    <string name="action_settings">Paramètres</string>
+
+    <string-array name = "food_titles">
+        <item> Kiwi </item>
+        <item> Pizza </item>
+        <item> Frites </item>
+        <item> Mofongo </item>
+        <item> Poulet au Curry </item>
+        <item> Ramen </item>
+        <item> Spaghetti </item>
+        <item> Gyro </item>
+        <item> Orange </item>
+        <item> Gelée </item>
+        <item> Brocoli </item>
+        <item> Pêches </item>
+        <item> Lechon </item>
+        <item> Saumon </item>
+        <item> Poulet Popeye </item>
+    </string-array>
+
+    <string-array name = "food_info">
+        <item> Voici quelques nouvelles de Kiwi! </item>
+        <item> Voici quelques nouvelles de Pizza! </item>
+        <item> Voici quelques nouvelles de French Fries! </item>
+        <item> Voici quelques nouvelles de Mofongo! </item>
+        <item> Voici quelques nouvelles de Chicken Curry! </item>
+        <item> Voici quelques nouvelles de Ramen! </item>
+        <item> Voici quelques nouvelles de Spaghetti! </item>
+        <item> Voici quelques nouvelles de Gyro! </item>
+        <item> Voici quelques nouvelles d\'Orange! </item>
+        <item> Voici quelques nouvelles de Jelly! </item>
+        <item> Voici quelques nouvelles du brocoli! </item>
+        <item> Voici quelques nouvelles de Peaches! </item>
+        <item> Voici quelques nouvelles de Lechon! </item>
+        <item> Voici quelques nouvelles de Salmon! </item>
+        <item> Voici quelques nouvelles de Popeye Chicken! </item>
+    </string-array>
+
+    <string-array name = "food_ingredient">
+        <item> Ingrédients:
+            \n 3-4 kiwis mûrs, pelés, soigneusement hachés
+            \n1 / 4 tasse de graines de grenade (arilles)
+            \ n 1/2 avocat, pelé et haché (voir comment couper et peler un avocat)
+            \n1 cuillère à soupe ample oignon vert émincé
+            \n1 cuillère à soupe (ajuster au goût) de piments jalapeño frais ou marinés hachés (sans graines) </item>
+        <item> Ingrédients:\n
+            1 boîte (13,8 oz) de croûte de pizza classique réfrigérée Pillsbury\n
+            1/2 tasse de bacon haché grossièrement (3 tranches)
+            \n6 œufs battus Économisez
+            \n4 oz (la moitié d\'un paquet de 8 oz) de fromage à la crème, coupé en petits morceaux
+            \n2 tasses de fromage Monterey Jack râpé avec piments jalapeño (8 oz)  </item>
+        <item> Ingrédients:
+            \n8 tasses d\'eau froide
+            \n½ tasse de sirop de maïs ((peut contenir 1/3 tasse de sucre))
+            \n3 cuillères à soupe de sel
+            \n1 cuillère à café de vinaigre blanc
+            \n6 grosses pommes de terre Russet (environ 4,5 livres) </item>
+        <item> Ingrédients
+            \n2 tasses d\'huile végétale (pour la friture)
+            \n3 plantains (verts, non mûrs)
+            \n1 cuillère à soupe de pâte d\'ail
+            \n6 onces de couenne de porc ou de craquelins (écrasés) </item>
+        <item> Ingrédients
+           \n ¼ à ½ cuillère à café de poudre de piment rouge ((variété moins épicée comme kashmiri ou byadgi))
+            \n¼ cuillère à café de sel (au besoin)
+            \n¼ cuillère à café de curcuma
+            \n½ cuillère à café de poudre de garam masala
+            \n1/8 cuillère à café de poudre de poivre </item>
+        <item> Ingrédients:
+           \n 2 gros œufs
+           \n L\'eau
+            \n4 tasses de bouillon de poulet
+            \n2 paquets de ramen instantanés
+            \n4 onces de crevettes décortiquées et déveinées </item>
+        <item> Ingrédients:
+            \n8 onces de linguine non cuites
+            \n1 demi-bâton (1/4 tasse) de beurre Land O Lakes avec huile d\'olive Sel de mer
+            \n2 cuillères à café d\'ail frais finement haché
+            \n1/2 cuillère à café de flocons de persil séché
+            \n1/2 tasse de vin blanc sec  </item>
+        <item> Ingrédients <!-- -->
+            \n 2 lb de cuisses de poulet (désossées et sans peau)
+            \n ½ tasse de yogourt grec (nature)
+            \n 2 cuillères à soupe de jus de citron
+             \n 2 cuillères à soupe de vinaigre de vin rouge
+            \n 2 cuillères à soupe d\'huile d\'olive</item>
+        <item> Ingrédients:
+            \n6 feuilles de menthe (+ pour la garniture)
+            \n2 coups de rhum blanc
+            \n1 shot de jus de citron vert
+            \n1-2 coups de jus d\'orange ((fraîchement pressé))
+            \nEau gazeuse (/ eau gazeuse) </item>
+        <item> Ingrédients:
+            \n6 feuilles de menthe (+ pour la garniture)
+            \n2 coups de rhum blanc
+            \n1 shot de jus de citron vert
+            \n1-2 coups de jus d\'orange ((fraîchement pressé))
+            \nEau gazeuse (/ eau gazeuse) </item>
+        <item> Ingrédients
+            \n24 crevettes entières (crues)
+            \n1 oignon entier (finement haché)
+            \n1/2 tasse d\'huile d\'avocat
+            \n1 cuillère à soupe de zeste de citron
+            \n3 gousses d\'ail (émincées) </item>
+        <item> Ingrédients
+            \n1 1/2 tasse de nectar de pêche
+            \n1 banane (coupée en deux)
+            \n1 1/2 tasse de pêches surgelées
+            \n1/2 tasse de mangue surgelée
+            \n3/4 tasse de yogourt grec à la vanille </item>
+        <item> Ingrédients:
+            \n20 gousses d\'ail
+            \n1 bouquet de coriandre, paré
+            \n1 tasse de feuilles d\'origan frais, légèrement tassées
+            \n5 cuillères à soupe de sel casher
+            \n2 cuillères à soupe de poivre noir </item>
+        <item> Ingrédients:
+            \n2 filets de saumon
+            \n1 1/2 cuillère à soupe d\'huile d\'olive (divisée)
+            \n4 gousses d\'ail (émincées)
+            \n1 cuillère à café d\'origan séché
+            \n1/2 cuillère à café de paprika </item>
+        <item> Ingrédients
+            \n2 livres de poitrines de poulet désossées (coupées en lanières)
+            \n1/3 tasse de sauce piquante à la Louisiane
+            \n1/2 tasse de babeurre
+            \nHuile d\'arachide pour remplir une friteuse
+            \n2/3 tasse de farine tout usage </item>
+    </string-array>
+    <string name="toast_link">Entrez un lien de recette en ligne</string>
+    <string name="toast_name">Entrez le nom de l\'aliment</string>
+    <string name="toast_ingredient">Entrez les ingrédients</string>
+    <string name="ok_button">valider</string>
+    <string name="unknown_action">action d\'intention inconnue</string>
+    <string name="custom_broadcast_toast">Diffusion personnalisée reçue</string>
+    <string name="happy_cooking">bonne cuisine</string>
+    <string name="send_the_broadcast">Envoyer la diffusion</string>
+</resources>

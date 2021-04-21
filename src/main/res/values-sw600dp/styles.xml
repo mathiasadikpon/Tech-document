@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FoodTitle"
+        parent="TextAppearance.AppCompat.Display1"/>
+    <style name="FoodDetailTitle"
+        parent="TextAppearance.AppCompat.Display3"/>
+
+</resources>

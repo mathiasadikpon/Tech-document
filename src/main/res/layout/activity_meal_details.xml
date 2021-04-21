@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DetailActivity">
+
+        <ImageView
+            android:id="@+id/random_food_image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/random_title_Detail"
+            style="@style/FoodDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/random_food_image_detail"
+            android:padding="16dp"
+            android:text="@string/title_placeholder"/>
+
+        <TextView
+            android:id="@+id/random_news_title_detail"
+            style="@style/FoodDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/random_food_image_detail"
+            android:padding="16dp"
+            android:text="@string/news_placeholder"
+            android:textColor="?android:textColorSecondary" />
+
+
+        <TextView
+            android:id="@+id/random_sub_Title_detail"
+            style="@style/FoodDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/random_news_title_detail"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/random_food_link_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/random_sub_Title_detail"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:autoLink="web"/>
+    </RelativeLayout>
+</ScrollView>
