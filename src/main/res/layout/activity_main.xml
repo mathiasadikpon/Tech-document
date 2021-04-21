@@ -1,175 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutGrid"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:useDefaultMargins="true">
+    android:background="@drawable/foot_ball1"
+    android:useDefaultMargins="true"
+    android:columnCount="4"
+    android:rowCount="4"
+    tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
+    <!-- First Row -->
+    <EditText
+        android:id="@+id/editNameTeam1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.TipCalculatorMP4.AppBarOverlay">
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="#FF0000"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:hint="Name Team 1"
+        android:textColorHint="@color/white"
+        android:layout_gravity="fill_horizontal"/>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#7AD8FF"
-        app:titleTextColor="@color/black"
-        app:popupTheme="@style/Theme.TipCalculatorMP4.PopupOverlay" />
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:useDefaultMargins="true">
+        android:backgroundTint="#FF0000"
+        android:hint="Send"
+        android:onClick="team1Name"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="fill_horizontal"/>
 
-        <!-- First row of the graph-->
-        <EditText
-            android:id="@+id/amount_editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_columnSpan="2"
-            android:ems="10"
-            android:textAlignment="center"
-            android:background="#ADD8FF"
-            android:inputType="number"
-            android:maxLength="6"
-            android:padding="@dimen/padding_textView_default"/>
-
-        <TextView
-            android:id="@+id/amount_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_columnSpan="2"
-            android:hint="@string/textView_billAmountHint"
-            android:padding="@dimen/padding_textView_default"/>
-
-        <!-- Second row of the graph-->
-        <TextView
-            android:id="@+id/percent_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:hint="@string/tip_percentageHint" />
-
-        <SeekBar
-            android:id="@+id/percent_seekBar"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="fill_horizontal"
-            android:progress="15"
-            android:maxHeight="40dp" />
-
-        <!-- Third row of the graph-->
-        <TextView
-            android:id="@+id/tip_label_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:hint="@string/tip" />
-
-        <TextView
-            android:id="@+id/tip_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill_horizontal"
-            android:background="#FFFFFF"
-            android:backgroundTint="@android:color/holo_orange_light"
-            android:gravity="center"
-            android:padding="@dimen/padding_textView_default"
-            android:hint="$0.00"/>
-
-        <!-- Fourth row of the graph-->
-        <TextView
-            android:id="@+id/total_label_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:hint="@string/total" />
-
-        <TextView
-            android:id="@+id/total_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill_horizontal"
-            android:background="#FFFFFF"
-            android:backgroundTint="@android:color/holo_orange_light"
-            android:gravity="center"
-            android:padding="@dimen/padding_textView_default"
-            android:hint="$0.00"/>
-    </GridLayout>
-
-    <!-- MP4 -->
-    <GridLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/editNameTeam2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:useDefaultMargins="true">
-        <TextView
-            android:id="@+id/number_people_label_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="People Split The Total:"
-            android:layout_gravity="center_vertical"/>
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="#0000FF"
+        android:textColor="@color/white"
+        android:hint="Name Team 2"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:layout_gravity="fill_horizontal"/>
 
-        <Spinner
-            android:id="@+id/number_people_spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"/>
+    <!-- Second Row -->
 
-        <TextView
-            android:id="@+id/rounding_options_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rounding Options:"
-            android:layout_gravity="center_vertical"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0000FF"
+        android:hint="Send"
+        android:onClick="team2Name"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="fill_horizontal"/>
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingHorizontal="20dp">
-            <RadioButton
-                android:id="@+id/no_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:onClick="onRadioButtonClicked"/>
+    <TextView
+        android:id="@+id/texViewTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text=" Downs: 0"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="fill_horizontal"/>
 
-            <RadioButton
-                android:id="@+id/tip_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tip"
-                android:onClick="onRadioButtonClicked"/>
+    <TextView
+        android:id="@+id/texViewTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:background="#0000FF"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="Downs: 0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="fill_horizontal"/>
 
-            <RadioButton
-                android:id="@+id/total_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Total"
-                android:onClick="onRadioButtonClicked"/>
-        </RadioGroup>
+    <!-- Third Row -->
+    <ImageView
+        android:id="@+id/imageViewTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/black"
+        android:foreground="@drawable/red_ball"
+        android:paddingVertical="89dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/amount_per_person_lebel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Per Person Total:" />
-        <TextView
-            android:id="@+id/amount_per_person_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="$0.00" />
+    <ImageView
+        android:id="@+id/imageViewTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/black"
+        android:foreground="@drawable/blue_ball1"
+        android:gravity="left"
+        android:paddingVertical="89dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
-    </GridLayout>
-</LinearLayout>
+    <!-- Fourth Row -->
+    <Button
+        android:id="@+id/buttonTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:paddingHorizontal="30dp"
+        android:text="Team 1"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#FF0000"
+        android:onClick="counterTeam1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"/>
+
+    <Button
+        android:id="@+id/buttonTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:paddingHorizontal="30dp"
+        android:text="Team 2"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:backgroundTint="#0000FF"
+        android:onClick="counterTeam2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnSpan="2"/>
+</GridLayout>
+

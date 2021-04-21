@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cupc"
+    android:useDefaultMargins="true"
+    android:columnCount="1"
+    tools:context=".WinnerActivity">
+
+    <!-- Display the winner -->
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <!-- Call a friend to share the good news -->
+    <EditText
+        android:id="@+id/call_friend_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="phone"
+        android:textStyle="bold"
+        android:hint="Type phone number"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/call_friend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity= "center"
+        android:textColor="#00FF00"
+        android:text="Call Friend"
+        android:onClick="callFriendButton"/>
+    <!-- Send a message with the  champion and points the won by -->
+    <Button
+        android:id="@+id/send_text_sms_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity= "center"
+        android:textColor="#00FF00"
+        android:text="Send text Message"
+        android:onClick="sendMessage"/>
+
+    <!-- Search on the Nearest Area for the sport the app support -->
+    <Button
+        android:id="@+id/location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#00FF00"
+        android:text="@string/button_loc"
+        android:onClick="openLocation"/>
+
+</GridLayout>
